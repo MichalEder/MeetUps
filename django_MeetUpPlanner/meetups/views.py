@@ -36,7 +36,6 @@ def meetup_detail(request, meetup_slug):
 
 
     except Exception as exc:
-        print(exc)
         return render(request, 'meetups/meetup_details.html', {
             'meetup_found': False})
 
